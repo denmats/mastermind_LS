@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style1.css">
+  <title>MasterMind</title>
+</head>
+
+<body class="bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<div class="card">
+					<div class="card-header">
+							<div class="collapse" id="navbarToggleExternalContent">
+								<div class="bg-dark p-4">
+									<h5 class="text-white h4">Gamer's Ranking<span id="cleanResults" class="badge badge-danger ml-2">Clean
+									  Results</span></h5>
+									<span class="text-white">
+									  <table class="table table-sm">
+										<thead>
+										  <tr>
+											<th scope="col">#</th>
+											<th scope="col">Username</th>
+											<th scope="col">Result</th>
+										  </tr>
+										</thead>
+										<tbody></tbody>
+									  </table>
+									</span>
+								</div>
+							</div>
+							<nav class="navbar navbar-dark bg-dark">
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+								aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							  </button>
+							  <p id="game-title" class="text-primary">MasterMind</p>
+							</nav>
+						
+					
+
+						<div class="container">
+							<div class="row">
+								<div class="card-body">
+									<h5 id="task">
+									  <p class="card-text text-center">
+										Try to guess by clicking which color each of these circles.</p>
+									</h5>
+
+									<div id="btns" class="btn-group-lg mb-4">
+										<i id="first" class="fas fa-question-circle"></i>
+										<i id="second" class="fas fa-question-circle"></i>
+										<i id="third" class="fas fa-question-circle"></i>
+										<i id="forth" class="fas fa-question-circle"></i>
+									</div>
+
+									<form id="form">
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-text">
+													<i class="fas fa-user" ></i> 
+												</span>
+												<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+											</div>
+										</div>
+										<div>
+											<button type="submit" class="btn btn-primary btn-block mb-2" >Submit</button>
+										</div>
+									</form>
+										
+									<button id="check" type="button" class="btn btn-dark">Check up </button>
+
+									<div id="attempts"></div>
+									<div id="results"></div>
+									<button id="newGame" type="button" class="btn btn-dark">New Game</button>
+									<hr>
+									<div id="footer"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    //  Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
